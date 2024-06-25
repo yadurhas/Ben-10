@@ -32,10 +32,11 @@
 }
 
 .container img:nth-child(2):hover{
-    height: 80vh;
+    height: 90vh;
     opacity: 1;
     cursor: pointer;
-    transform: translate(-7.14%, -5vh);
+    transform: translate(-14.285%, -10vh);
+    filter: drop-shadow(10px 10px 4px rgb(2, 68, 2));
 }
 
 .aliens{
@@ -43,7 +44,7 @@
     height: 100vh;
     padding:2px;
     display: flex;
-    background-color:;
+    background-color:transparent;
 }
 
 .aliens img{
@@ -54,13 +55,16 @@
 .aliens .images{
     position: absolute;
     top: 20%;
+    border-radius: 10px;
+    border:1px solid rgb(196, 196, 9);
+    background-color: rgba(245, 245, 191);
 }
 
 .aliens .images .description{
-    width: 200px;
+    width: 15vw;
     background-color: aquamarine;
-    border-top: 1px solid;
-    border-radius: 5px 5px 10px 10px;
+    border-top: 1px solid rgb(196, 196, 9);
+    border-radius: 0px 0px 10px 10px;
     padding:2px;
     margin: 0px auto;
 }
@@ -105,12 +109,62 @@
     right: calc(var(--gap) * 18);
 }
 
+.aliens .images.stacked:nth-child(1){
+    right: 38%;
+    pointer-events: none;
+}
+
+.aliens .images.stacked:nth-child(2){
+    right: 39%;
+    pointer-events: none;
+}
+
+.aliens .images.stacked:nth-child(3){
+    right: 40%;
+    pointer-events: none;
+}
+
+.aliens .images.stacked:nth-child(4){
+    right: 41%;
+    pointer-events: none;
+}
+
+.aliens .images.stacked:nth-child(5){
+    right: 42%;
+    pointer-events: none;
+}
+
+.aliens .images.stacked:nth-child(6){
+    right: 43%;
+    pointer-events: none;
+}
+
+.aliens .images.stacked:nth-child(7){
+    right: 44%;
+    pointer-events: none;
+}
+
+.aliens .images.stacked:nth-child(8){
+    right: 45%;
+    pointer-events: none;
+}
+
+.aliens .images.stacked:nth-child(9){
+    right: 46%;
+    pointer-events: none;
+}
+
+.aliens .images.stacked:nth-child(10){
+    right: 47%;
+    pointer-events: none;
+}
+
 .aliens .images:hover{
     z-index:1;
     top: 5vh;
-    border:1px solid black;
+    border:1px solid rgb(196, 196, 9);
     background-color: rgba(245, 245, 191, 0.65);
-    border-radius: 10px;
+    
     /*filter: drop-shadow(10px 10px 5px black);*/
 }
 
@@ -119,11 +173,40 @@
 }
 
 .aliens .footer{
+    cursor: pointer;
     margin: auto auto 3vh auto;
     padding: 30px;
     font-family: bold;
     font-size: 3rem;
     border-radius: 10px;
+    border: 3px solid rgb(7, 56, 17);
     background-color: rgb(18, 97, 35);
     color: white;
+}
+
+.aliens .footer:hover{
+    box-shadow: 5px 5px 5px rgb(5, 53, 15), 5px 5px 5px inset rgb(146, 221, 162);
+}
+
+.aliens .footer:active{
+    box-shadow: 5px 5px 5px inset rgb(5, 53, 15);
+}
+
+
+.aliens .home{
+    position: absolute;
+    top: 2vh;
+    left: 1vw;
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.aliens .home img{
+    width: 3vw;
+    height: initial;
+}
+
+.aliens .home img:hover{
+    cursor: pointer;
+    width: 3.2vw;
+    transform: translate(-0.1vw, -3.125%);
 }
